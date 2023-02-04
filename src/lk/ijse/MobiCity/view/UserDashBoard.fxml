@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="1001.0" prefWidth="1897.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobiCity.controller.UserDashBoardController">
+   <children>
+      <Pane prefHeight="1001.0" prefWidth="476.0" styleClass="left-pane" stylesheets="@../style/Style.css">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="411.0" layoutX="83.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/pngwing.com%20(1).png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="29.0" layoutY="388.0" prefHeight="457.0" prefWidth="411.0">
+               <children>
+                  <JFXButton fx:id="btnPurchase" alignment="BOTTOM_LEFT" minHeight="30.0" onAction="#purchaseOrderOnAction" prefHeight="91.0" prefWidth="411.0" styleClass="left-button" text="   Purchase" textAlignment="RIGHT" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="72.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/PlaceOrder.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCustomer" alignment="TOP_LEFT" minHeight="30.0" onAction="#customerOnAction" prefHeight="91.0" prefWidth="411.0" styleClass="left-button" text="   Customer" textAlignment="RIGHT" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/customer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <JFXButton fx:id="btnLogOut" layoutX="41.0" layoutY="912.0" onAction="#logOutOnAction" prefHeight="75.0" prefWidth="390.0" style="-fx-background-color: #2980b9; -fx-background-radius: 20;" text="LogOut">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="53.0" layoutY="198.0" text="M O B I C I T Y" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="269.0" text="PLAZA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="subPane" layoutX="475.0" prefHeight="1000.0" prefWidth="1422.0" style="-fx-background-color: #b2bec3;">
+         <children>
+            <Label fx:id="lblDate" layoutX="1127.0" layoutY="89.0" text="2022-07-07">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="873.0" layoutY="85.0" text="hh-mm-ss">
+               <font>
+                  <Font name="System Bold" size="44.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="64.0" prefHeight="89.0" prefWidth="636.0" text="PHONE ACCESSORIES">
+               <font>
+                  <Font name="System Bold" size="61.0" />
+               </font>
+            </Label>
+            <Pane layoutX="84.0" layoutY="348.0" opacity="0.48" prefHeight="552.0" prefWidth="430.0" style="-fx-background-color: WHITE; -fx-background-radius: 20;">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="38.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nowadays most of mobile phone manufactures are aligned with standards. Therefore, they do not provide some mandatory accessories such as chargers, cables and headsets and customers are free to purchase any accessory which support the standards.As MOBICITY PLAZA, we manufacture excellent quality universal mobile phone accessories which are compatible with standards." wrappingWidth="356.0000082552433">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="117.0" layoutY="28.0" text="About Us">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <ImageView fitHeight="276.0" fitWidth="277.0" layoutX="552.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/—Pngtree—smart%20phone%20wireless%20charger%20stereo_6855484.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="266.0" fitWidth="238.0" layoutX="989.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/pngwing.com.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="276.0" fitWidth="277.0" layoutX="736.0" layoutY="634.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/—Pngtree—charging%20line%20the%20charging%20interface_6925304.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

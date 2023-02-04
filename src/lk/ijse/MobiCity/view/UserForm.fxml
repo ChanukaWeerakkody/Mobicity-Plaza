@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subPane" prefHeight="1001.0" prefWidth="1456.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobiCity.controller.UserFormController">
+   <children>
+      <Pane layoutX="23.0" layoutY="15.0" prefHeight="200.0" prefWidth="1404.0" stylesheets="@../style/Style.css">
+         <styleClass>
+            <String fx:value="left-pane" />
+            <String fx:value="btn-radius" />
+         </styleClass>
+         <children>
+            <Label layoutX="560.0" layoutY="37.0" text="USER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="74.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="69.0" layoutY="347.0" text="Employee Id :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="516.0" text="Username      :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="605.0" text="Password       :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="435.0" text="Role               :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="280.0" layoutY="353.0" prefHeight="33.0" prefWidth="352.0" />
+      <JFXTextField fx:id="txtPassword" layoutX="280.0" layoutY="612.0" prefHeight="33.0" prefWidth="352.0" />
+      <JFXTextField fx:id="txtUsername" layoutX="280.0" layoutY="521.0" prefHeight="33.0" prefWidth="352.0" />
+      <TableView fx:id="tblUser" layoutX="736.0" layoutY="318.0" prefHeight="538.0" prefWidth="668.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="130.3333740234375" text="Employee Id" />
+          <TableColumn fx:id="colRole" prefWidth="161.3333740234375" text="Role" />
+            <TableColumn fx:id="colUsername" prefWidth="227.6666259765625" text="Username" />
+            <TableColumn fx:id="colPassword" prefWidth="148.66668701171875" text="Password" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnRefresh" layoutX="980.0" layoutY="880.0" onAction="#refreshOnAction" style="-fx-background-color: #d1ccc0; -fx-background-radius: 20;" text="Refresh">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="334.0" layoutY="714.0" onAction="#clearOnAction" style="-fx-background-color: #d1ccc0; -fx-background-radius: 20;" text="Clear">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnAdd" layoutX="499.0" layoutY="715.0" onAction="#addOnAction" style="-fx-background-color: #60a3bc; -fx-background-radius: 20;" text="ADD">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="59.0" layoutY="874.0" onAction="#updateOnAction" prefHeight="74.0" prefWidth="189.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 20;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" layoutX="278.0" layoutY="873.0" onAction="#searchOnAction" prefHeight="74.0" prefWidth="189.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 20;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="502.0" layoutY="873.0" onAction="#deleteOnAction" prefHeight="74.0" prefWidth="189.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 20;" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbRole" layoutX="281.0" layoutY="446.0" onAction="#addRoleOnAction" prefHeight="33.0" prefWidth="352.0" />
+   </children>
+</AnchorPane>

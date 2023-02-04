@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobiCity.controller.SplashScreenController">
+   <children>
+      <ImageView fitHeight="403.0" fitWidth="606.0" layoutX="-3.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/phone-with-music-icon-headphones-blurred-background-music-listening-concept-copy-space.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="rctContainer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="8.0" layoutX="14.0" layoutY="345.0" stroke="BLACK" strokeType="INSIDE" width="572.0" />
+      <Rectangle fx:id="rctLoading" arcHeight="5.0" arcWidth="5.0" fill="#1ffff9" height="8.0" layoutX="14.0" layoutY="345.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+      <Label layoutX="131.0" layoutY="364.0" text="Copyright C 2022 Institute of Java Software Engineering " textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="46.0" text="Mobi" textFill="WHITE">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="47.0" text="City" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="101.0" text="Plaza" textFill="WHITE">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="149.0" text="V4.0" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLoarding" layoutX="18.0" layoutY="310.0" text="Loading...." textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

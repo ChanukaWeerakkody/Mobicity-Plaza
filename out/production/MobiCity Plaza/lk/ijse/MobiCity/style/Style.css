@@ -1,0 +1,51 @@
+.Parent{
+    -fx-background-color: white;
+}
+.left-button{
+    -fx-background-color: linear-gradient(to right,#192053,#726cab);
+}
+.left-pane{
+    -fx-background-color: linear-gradient(to right,#192053,#726cab);
+}
+.btn-radius{
+    -fx-background-radius: 20px;
+}
+.right-button{
+    -fx-background-color:  #d1ccc0;
+}
+.left-button:hover{
+    -fx-background-color: linear-gradient(to right,#192053, #a71067);
+}
+.card{
+    -fx-background-color: linear-gradient(to right,#2e4d6e, #276a99);
+}
+.add-btn{
+    -fx-background-color: #275578;
+    -fx-background-radius: 20px;
+}
+.add-btn:hover{
+    -fx-background-color: #2975ab;
+}
+.update-btn{
+    -fx-background-color: #277737;
+    -fx-background-radius: 20px;
+}
+.update-btn:hover{
+    -fx-background-color: #30ab67;
+}
+
+.delete-btn{
+    -fx-background-color: #822730;
+    -fx-background-radius: 20px;
+}
+.delete-btn:hover{
+    -fx-background-color: #b52a38;
+}
+.search-btn{
+    -fx-background-color: #7c3186;
+    -fx-background-radius: 20px;
+}
+.search-btn:hover{
+    -fx-background-color: #9328a4;
+}
+

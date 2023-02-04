@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subPane" prefHeight="1001.0" prefWidth="1456.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobiCity.controller.DeleteEmployeeController">
+   <children>
+      <Pane layoutX="23.0" layoutY="15.0" prefHeight="200.0" prefWidth="1404.0" stylesheets="@../style/Style.css">
+         <styleClass>
+            <String fx:value="left-pane" />
+            <String fx:value="btn-radius" />
+         </styleClass>
+         <children>
+            <Label layoutX="504.0" layoutY="37.0" text="Delete Form" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="74.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnBack" layoutX="1251.0" layoutY="68.0" mnemonicParsing="false" onAction="#backOnAction" style="-fx-background-color: #60a3bc; -fx-background-radius: 20;" text="Back">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="69.0" layoutY="347.0" prefHeight="46.0" prefWidth="353.0" text="Employee Id                   :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="605.0" prefHeight="46.0" prefWidth="372.0" text="Contact No                      :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="435.0" prefHeight="46.0" prefWidth="353.0" text="Employee name             :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="442.0" layoutY="353.0" onAction="#idOnAction" prefHeight="33.0" prefWidth="352.0" />
+      <JFXTextField fx:id="txtContact" layoutX="444.0" layoutY="612.0" prefHeight="33.0" prefWidth="352.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="443.0" layoutY="521.0" prefHeight="33.0" prefWidth="352.0" />
+      <JFXTextField fx:id="txtName" layoutX="443.0" layoutY="439.0" prefHeight="33.0" prefWidth="352.0" />
+      <JFXButton fx:id="btnClear" layoutX="334.0" layoutY="714.0" onAction="#clearOnAction" prefHeight="75.0" prefWidth="163.0" style="-fx-background-color: #d1ccc0; -fx-background-radius: 20;" text="Clear">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="587.0" layoutY="715.0" onAction="#deleteOnAction" prefHeight="75.0" prefWidth="201.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 20;" text="Delete">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="65.0" layoutY="519.0" prefHeight="46.0" prefWidth="371.0" text="Address                           :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="451.0" fitWidth="460.0" layoutX="917.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/—Pngtree—hand%20drawn%20cartoon%20garbage%20sorting_5507694.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subPane" prefHeight="1001.0" prefWidth="1456.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobiCity.controller.OrderFormController">
+   <children>
+      <Pane layoutX="23.0" layoutY="15.0" prefHeight="200.0" prefWidth="1404.0" stylesheets="@../style/Style.css">
+         <styleClass>
+            <String fx:value="left-pane" />
+            <String fx:value="btn-radius" />
+         </styleClass>
+         <children>
+            <Label layoutX="617.0" layoutY="37.0" text="ORDER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="74.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tblOrder" layoutX="188.0" layoutY="380.0" prefHeight="538.0" prefWidth="1103.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="158.0" text="Order id" />
+          <TableColumn fx:id="colCustomerId" prefWidth="186.0" text="Customer Id" />
+            <TableColumn fx:id="colBilledDate" prefWidth="164.0" text="Billed Date" />
+            <TableColumn fx:id="colTotal" prefWidth="204.0" text="Total" />
+            <TableColumn fx:id="colPay" prefWidth="161.0" text="Payment" />
+            <TableColumn fx:id="colBalance" prefWidth="229.0" text="Balance" />
+        </columns>
+      </TableView>
+      <Label layoutX="97.0" layoutY="289.0" text="Search        :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSearch" layoutX="273.0" layoutY="287.0" onAction="#txtOrderIdOnAction" prefHeight="33.0" prefWidth="282.0" />
+      <JFXButton fx:id="btnReport" layoutX="1139.0" layoutY="276.0" onAction="#reportOnAction" styleClass="add-btn" stylesheets="@../style/Style.css" text="Get Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="subPane" prefHeight="1001.0" prefWidth="1456.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobiCity.controller.UpdateSupplierController">
+   <children>
+      <Pane layoutX="23.0" layoutY="15.0" prefHeight="200.0" prefWidth="1404.0" stylesheets="@../style/Style.css">
+         <styleClass>
+            <String fx:value="left-pane" />
+            <String fx:value="btn-radius" />
+         </styleClass>
+         <children>
+            <Label layoutX="504.0" layoutY="37.0" text="Update Form" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="74.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnBack" layoutX="1251.0" layoutY="68.0" mnemonicParsing="false" onAction="#backOnAction" style="-fx-background-color: #60a3bc; -fx-background-radius: 20;" text="Back">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="69.0" layoutY="347.0" prefHeight="46.0" prefWidth="353.0" text="Supplier id                     :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="546.0" prefHeight="46.0" prefWidth="372.0" text="Brand                              :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="411.0" prefHeight="46.0" prefWidth="363.0" text="Supplier name                :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="442.0" layoutY="353.0" onAction="#txtIdOnAction" prefHeight="33.0" prefWidth="352.0" />
+      <JFXTextField fx:id="txtBrand" layoutX="444.0" layoutY="553.0" prefHeight="33.0" prefWidth="352.0" />
+      <JFXTextField fx:id="txtItemName" layoutX="443.0" layoutY="482.0" prefHeight="33.0" prefWidth="352.0" />
+      <JFXTextField fx:id="txtName" layoutX="443.0" layoutY="415.0" prefHeight="33.0" prefWidth="352.0" />
+      <JFXButton fx:id="btnClear" layoutX="369.0" layoutY="811.0" onAction="#clearOnAction" prefHeight="75.0" prefWidth="163.0" style="-fx-background-color: #d1ccc0; -fx-background-radius: 20;" text="Clear">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="587.0" layoutY="812.0" onAction="#updateOnAction" prefHeight="75.0" prefWidth="201.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 20;" text="Update">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="65.0" layoutY="480.0" prefHeight="46.0" prefWidth="371.0" text="Item name                      :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="451.0" fitWidth="460.0" layoutX="917.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/—Pngtree—people%20putting%20together%20a%20series_7537093.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="63.0" layoutY="675.0" prefHeight="46.0" prefWidth="372.0" text="Price                                :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPrice" layoutX="443.0" layoutY="682.0" prefHeight="33.0" prefWidth="352.0" />
+      <Label layoutX="64.0" layoutY="611.0" prefHeight="46.0" prefWidth="372.0" text="Qty                                  :">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtQty" layoutX="444.0" layoutY="618.0" prefHeight="33.0" prefWidth="352.0" />
+   </children>
+</AnchorPane>
